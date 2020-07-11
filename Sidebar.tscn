@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/inventorybox.png" type="Texture" id=1]
+[ext_resource path="res://EquipList.gd" type="Script" id=2]
+[ext_resource path="res://ConsumList.gd" type="Script" id=3]
 
 [node name="Sidebar" type="MarginContainer"]
 margin_right = 320.0
@@ -20,26 +22,143 @@ patch_margin_right = 4
 patch_margin_bottom = 4
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 20.0
-margin_top = 20.0
-margin_right = -20.0
-margin_bottom = -20.0
+margin_right = 320.0
+margin_bottom = 640.0
 
-[node name="VSplitContainer" type="VSplitContainer" parent="MarginContainer"]
-margin_right = 280.0
-margin_bottom = 600.0
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 320.0
+margin_bottom = 640.0
 
-[node name="AAAA" type="Label" parent="MarginContainer/VSplitContainer"]
-margin_right = 280.0
+[node name="StatsLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_right = 320.0
 margin_bottom = 14.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "AAAA"
+text = "STATs"
 
-[node name="BBBBB" type="Label" parent="MarginContainer/VSplitContainer"]
-margin_top = 306.0
-margin_right = 280.0
-margin_bottom = 320.0
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 320.0
+margin_bottom = 32.0
+
+[node name="ATK" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_right = 24.0
+margin_bottom = 14.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "BBBB"
+text = "ATK"
+
+[node name="DEF" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 28.0
+margin_right = 52.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "DEF"
+
+[node name="SPD" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 56.0
+margin_right = 81.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SPD"
+
+[node name="PER" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 85.0
+margin_right = 108.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "PER"
+
+[node name="LCK" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 112.0
+margin_right = 135.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LCK"
+
+[node name="EquipLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 36.0
+margin_right = 320.0
+margin_bottom = 50.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "EQUIPMENT"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 320.0
+margin_bottom = 68.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+margin_right = 32.0
+margin_bottom = 14.0
+
+[node name="BodyLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_right = 32.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Body"
+align = 3
+valign = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 36.0
+margin_right = 76.0
+margin_bottom = 14.0
+
+[node name="HandsLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Hands"
+align = 3
+valign = 1
+
+[node name="InventoryLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 72.0
+margin_right = 320.0
+margin_bottom = 86.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "INVENTORY"
+
+[node name="TabContainer" type="TabContainer" parent="MarginContainer/VBoxContainer"]
+margin_top = 90.0
+margin_right = 320.0
+margin_bottom = 126.0
+tab_align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Equipment" type="Panel" parent="MarginContainer/VBoxContainer/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="EquipList" type="ItemList" parent="MarginContainer/VBoxContainer/TabContainer/Equipment"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -8.0
+margin_bottom = -14.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Consumables" type="Panel" parent="MarginContainer/VBoxContainer/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = 3.0
+margin_bottom = 22.0
+
+[node name="ConsumList" type="ItemList" parent="MarginContainer/VBoxContainer/TabContainer/Consumables"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -8.0
+margin_bottom = -36.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
