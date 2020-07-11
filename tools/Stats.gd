@@ -8,15 +8,15 @@ export(float) var perception = 0
 export(float) var speed = 0
 export(float) var luck = 0
 
-func _init(attack=0, defense=0, perception=0, speed=0, luck=0):
-	define(attack, defense, perception, speed, luck)
+func _init(_attack=0, _defense=0, _perception=0, _speed=0, _luck=0):
+	define(_attack, _defense, _perception, _speed, _luck)
 
-func define(attack, defense, perception, speed, luck):
-	self.attack = attack
-	self.defense = defense
-	self.perception = perception
-	self.speed = speed
-	self.luck = luck
+func define(_attack, _defense, _perception, _speed, _luck):
+	self.attack = _attack
+	self.defense = _defense
+	self.perception = _perception
+	self.speed = _speed
+	self.luck = _luck
 
 func add(stats):
 	self.attack += stats.attack
