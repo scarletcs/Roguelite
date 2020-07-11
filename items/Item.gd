@@ -1,7 +1,6 @@
 extends Area2D
 
 enum ItemType { EQUIPMENT, CONSUMABLE }
-var item_stats = Stats.new()
 
 export var item_name = ''
 export(float) var attack = 0

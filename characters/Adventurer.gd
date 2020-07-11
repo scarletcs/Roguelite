@@ -1,15 +1,19 @@
 extends Area2D
 
-export(float) var attack = 0
-export(float) var defense = 0
-export(float) var perception = 0
-export(float) var speed = 0
-export(float) var luck = 0
-
-onready var stats = Stats.new(attack, defense, perception, speed, luck)
-
 var movement_speed = 32 # px
 var target = Vector2()
+
+var personalities = [
+	Personality.new('Brave',    Stats.new( 5,  5, -2,  0, -2)),
+	Personality.new('Nerdy',    Stats.new()),
+	Personality.new('Sporty',   Stats.new( 0, -2,  5, -2,  5)),
+	Personality.new('Meek',     Stats.new(-2,  0,  5, -2,  5)),
+	Personality.new('Artsy',    Stats.new()),
+	Personality.new('Flighty',  Stats.new( 0, -2,  5,  5, -2))
+]
+
+func _ready():
+	$Stats.attack = 5
 
 func _process(delta):
 	var velocity = Vector2()
