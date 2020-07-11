@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/monster-march.png" type="Texture" id=1]
+[ext_resource path="res://characters/Enemy.gd" type="Script" id=2]
+[ext_resource path="res://tools/Wobbler.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6, 8 )
+
+[node name="Enemy" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionBox" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 8 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -4 )
+
+[node name="Wobbler" parent="." instance=ExtResource( 3 )]
+scale = Vector2( 2, 2 )
+remote_path = NodePath("../Sprite")
