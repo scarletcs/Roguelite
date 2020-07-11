@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/monster-march.png-f48a45d45bb21940ea970e6279e64a5d.stex"
+path="res://.import/9-slice.png-9b824be456d9e26e4364741c9f769260.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monster-march.png"
-dest_files=[ "res://.import/monster-march.png-f48a45d45bb21940ea970e6279e64a5d.stex" ]
+source_file="res://assets/9-slice.png"
+dest_files=[ "res://.import/9-slice.png-9b824be456d9e26e4364741c9f769260.stex" ]
 
 [params]
 
