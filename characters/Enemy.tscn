@@ -11,15 +11,12 @@ extents = Vector2( 6, 8 )
 "enemy",
 ]]
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionBox" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -8 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, 8 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, -4 )
