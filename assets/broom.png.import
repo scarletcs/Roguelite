@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/broom.png-a9c97ba5ec82e2860c3b3e0560d3a342.stex"
+path="res://.import/broom.png-aa201ab37eee266f57f861e4888cfea1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/broom.png"
-dest_files=[ "res://.import/broom.png-a9c97ba5ec82e2860c3b3e0560d3a342.stex" ]
+source_file="res://Assets/broom.png"
+dest_files=[ "res://.import/broom.png-aa201ab37eee266f57f861e4888cfea1.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

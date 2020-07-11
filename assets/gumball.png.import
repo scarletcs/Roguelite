@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gumball.png-f8ad2c7ca9740a2a88ab10ab8051ba5a.stex"
+path="res://.import/gumball.png-79f7c9d971691e3a1dae0e63c6b089f0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/gumball.png"
-dest_files=[ "res://.import/gumball.png-f8ad2c7ca9740a2a88ab10ab8051ba5a.stex" ]
+source_file="res://Assets/gumball.png"
+dest_files=[ "res://.import/gumball.png-79f7c9d971691e3a1dae0e63c6b089f0.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

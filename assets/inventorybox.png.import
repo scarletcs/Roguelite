@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/inventorybox.png-18090221fdea7c241883c5a6ad499655.stex"
+path="res://.import/inventorybox.png-660dad7035539506de7d094a91e5cdbc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/inventorybox.png"
-dest_files=[ "res://.import/inventorybox.png-18090221fdea7c241883c5a6ad499655.stex" ]
+source_file="res://Assets/inventorybox.png"
+dest_files=[ "res://.import/inventorybox.png-660dad7035539506de7d094a91e5cdbc.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kitten.png-0bc9ce02e9145e004cbbba636eb92ab2.stex"
+path="res://.import/kitten.png-a102ce4d53e9aad9a47a36748876af1d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kitten.png"
-dest_files=[ "res://.import/kitten.png-0bc9ce02e9145e004cbbba636eb92ab2.stex" ]
+source_file="res://Assets/kitten.png"
+dest_files=[ "res://.import/kitten.png-a102ce4d53e9aad9a47a36748876af1d.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

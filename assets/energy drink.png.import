@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/energy drink.png-4f6cd82ba9efb53ac121d5f78b1c458a.stex"
+path="res://.import/energy drink.png-b145b941c42d115c59c2453dcc9d1cc4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/energy drink.png"
-dest_files=[ "res://.import/energy drink.png-4f6cd82ba9efb53ac121d5f78b1c458a.stex" ]
+source_file="res://Assets/energy drink.png"
+dest_files=[ "res://.import/energy drink.png-b145b941c42d115c59c2453dcc9d1cc4.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

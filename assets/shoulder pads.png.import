@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shoulder pads.png-4b665bccc9c7dcddda3360fa6bbb40db.stex"
+path="res://.import/shoulder pads.png-0411eee0b353d53fddca85a1e673b15e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/shoulder pads.png"
-dest_files=[ "res://.import/shoulder pads.png-4b665bccc9c7dcddda3360fa6bbb40db.stex" ]
+source_file="res://Assets/shoulder pads.png"
+dest_files=[ "res://.import/shoulder pads.png-0411eee0b353d53fddca85a1e673b15e.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

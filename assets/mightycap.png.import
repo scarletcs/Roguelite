@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mightycap.png-20c3652c32df438571d773b0f85e2d5d.stex"
+path="res://.import/mightycap.png-0fc663d1672d4005f54b91a32266916f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mightycap.png"
-dest_files=[ "res://.import/mightycap.png-20c3652c32df438571d773b0f85e2d5d.stex" ]
+source_file="res://Assets/mightycap.png"
+dest_files=[ "res://.import/mightycap.png-0fc663d1672d4005f54b91a32266916f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
