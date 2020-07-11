@@ -1,9 +1,13 @@
 extends Area2D
 
-export var target = Vector2(300, 100)
+var target = null
 export var movement_speed = 60
 
 func _process(delta):
+	if !target:
+		$Wobbler.on = false
+		return
+	
 	var velocity = Vector2()
 
 	if position.distance_to(target) > 1:
