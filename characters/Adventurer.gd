@@ -4,13 +4,16 @@ var movement_speed = 32 # px
 var target = Vector2()
 
 const NUM_PERSONALITIES = 2
+const UP = 5
+const DN = -2
+const N_ = 0
 var possible_personalities = [
-	Personality.new('Brave',    Stats.new( 5,  5, -2,  0, -2)),
-	Personality.new('Nerdy',    Stats.new()),
-	Personality.new('Sporty',   Stats.new( 0, -2,  5, -2,  5)),
-	Personality.new('Meek',     Stats.new(-2,  0,  5, -2,  5)),
-	Personality.new('Artsy',    Stats.new()),
-	Personality.new('Flighty',  Stats.new( 0, -2,  5,  5, -2))
+	Personality.new('Brave',    Stats.new(UP, UP, DN, N_, DN)),
+	Personality.new('Nerdy',    Stats.new(N_, UP, UP, DN, N_)),
+	Personality.new('Sporty',   Stats.new(N_, DN, UP, DN, UP)),
+	Personality.new('Meek',     Stats.new(DN, N_, UP, DN, UP)),
+	Personality.new('Artsy',    Stats.new(UP, N_, DN, UP, N_)),
+	Personality.new('Flighty',  Stats.new(DN, DN, N_, UP, DN))
 ]
 
 var persona = []
