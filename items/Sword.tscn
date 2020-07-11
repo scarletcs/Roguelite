@@ -7,5 +7,4 @@
 
 [node name="Item" parent="." instance=ExtResource( 1 )]
 item_name = "Sword"
-attack = 2
 texture = ExtResource( 2 )
