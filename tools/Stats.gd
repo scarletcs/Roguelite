@@ -1,3 +1,5 @@
+extends Node
+
 class_name Stats
 
 export(float) var attack = 0
@@ -16,3 +18,12 @@ func define(attack, defense, perception, speed, luck):
 	self.speed = speed
 	self.luck = luck
 
+func add(stats):
+	self.attack += stats.attack
+	self.defense += stats.defense
+	self.perception += stats.perception
+	self.speed += stats.speed
+	self.luck += stats.luck
+
+func _to_string():
+	return '[Stats ATK %s, DEF %s, PER %s, SPD %s, LUK %s]' % [attack, defense, perception, speed, luck]
