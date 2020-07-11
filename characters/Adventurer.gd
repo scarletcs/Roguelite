@@ -25,8 +25,6 @@ func _ready():
 		var new_personality = p.pop_front()
 		persona.append(new_personality)
 		$Stats.add(new_personality.stats)
-	print(persona)
-	print($Stats)
 
 func _process(delta):
 	var velocity = Vector2()
